@@ -1,0 +1,160 @@
+body{
+	font-family: "cursive";
+	background: #2f4f4f; /*darkslategray*/
+
+}
+
+header{
+
+	/*texto*/
+	text-align: center;
+
+	/*disposição*/
+	height: 15%;
+	background: #deb887; /*bulrywood*/
+}
+
+main{
+	height: 75%;
+	background: #2f4f4f; /*darkslategray*/
+}
+
+#logo{
+	/* disposição*/
+	position: absolute;
+	left: 2rem;  
+	top: 2rem;
+	width: 2rem;
+	height: 3rem;
+}
+
+#cabeçalho{
+	/* disposição*/
+	position: center; 
+	top: 2rem;
+	width: auto;
+	height: 5rem;
+
+}
+
+
+
+.comandos{
+
+	/*área dos botões*/
+	background: #2f4f4f;
+	width: 100%; 
+	height: 40%;
+	display: inline-block;
+	text-align: center;	
+
+	margin-top: 2rem;
+}
+
+#textoEntrada{
+	position: relative;
+	top: 10%;
+	left: 0%;
+
+	border: none;
+
+}
+
+#atencao{
+	position: relative;
+	top: 20%;
+	left: 0%;
+}
+
+.button1{
+	
+	
+	/*texto*/
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	text-align: center;
+	color: "black";
+
+
+	/*disposição*/
+
+	position: static;
+	width: 15rem;
+	height: 6rem;
+
+	/* burlywood*/
+	background: #deb887;
+	border-radius: 1.5rem;
+
+
+}
+
+.button1:hover{
+	font-size: 1.5rem;
+}
+
+.button2{
+	
+	
+	/*texto*/
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	text-align: center;
+	color: "black";
+
+
+	/*disposição*/
+
+	position: static;
+	width: 15rem;
+	height: 6rem;
+
+	/* burlywood*/
+	background: #deb887;
+	border-radius: 1.5rem;
+
+
+}
+
+.button2:hover{
+	font-size: 1.5rem;
+}
+
+footer{
+	/*texto*/
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1rem;
+	text-align: center;
+	color: "black";
+	margin-top: 1rem;
+
+	/*posição*/
+	height: 2%;
+	background: #2f4f4f;
+}
+
+.perfis-pessoais{
+	/* disposição*/
+	position: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+/*TABULEIRO*/
+
+.tabuleiro{
+
+	background: #2f4f4f; /*darkslategray*/
+	width: 100%;
+	height: 75%;
+
+}
