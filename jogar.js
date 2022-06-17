@@ -30,7 +30,7 @@ var letrasIncorretas = "";
 var corBloco = 'white';
 var corFundo = 'darkslategrey';
 
-var possiveisPalavras = ['CANETA', 'BORRACHA', 'CADERNO', 'LAPIS', 'CARTOLINA', 'TESOURA', '' ];
+var possiveisPalavras = ['CANETA', 'BORRACHA', 'CADERNO', 'LAPIS', 'CARTOLINA', 'TESOURA', 'MOCHILA', 'ESTOJO', 'AGENDA', 'GRAFITE', 'GIZ', 'TINTA', 'PINCEL', 'COLA', 'PASTA' ];
 var alfabeto = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 var tela = document.querySelector('canvas');
@@ -258,14 +258,21 @@ function comparaLetras(evento){
         } 
 } 
 
-
+//Geração da palavra secreta
 var palavraSecreta = criaPalavraSecreta();
 
+//Dica 
+desenhaLetras('Dica: material escolar', xForca + 600 , yForca - alturaDaForca + 250, corBloco);
 
+//Espaço para letras incorretas digitadas
 desenhaLetras('Tentativas incorretas:', xForca + 600 , yForca - alturaDaForca, corBloco);
+
+//Desenho da forca
 desenhaForca(xForca, yForca, corBloco);
+
+//Desenho dos traços correspondentes
 desenhaTracos(xTracos, yTracos, palavraSecreta ,corBloco);
-console.log(palavraSecreta);
+
 
 document.onkeydown = comparaLetras;
 
